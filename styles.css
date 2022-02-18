@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "Poppins Black Italic";
+  src: url(fonts/Poppins-BlackItalic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Inter Regular";
+  src: url(fonts/Inter-Regular.woff2) format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter Regular", sans-serif;
+  font-size: 16pxpx;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: magenta;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins Black Italic";
+}
+
+h1 {
+  font-size: 96px;
+}
+
+h2 {
+  font-size: 64px;
+}
+
+h3 {
+  font-size: 24px;
+  margin: 24px 0;
+}
+
+section,
+body > header,
+footer {
+  padding: 16px 32px;
+}
+
+body > header {
+  grid-column: 1 / span 2;
+  background-color: palevioletred;
+  display: flex;
+  justify-content: space-between;
+}
+
+body > header h1 {
+  color: aquamarine;
+  margin-bottom: 32px;
+}
+
+body > header p {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 24px;
+  line-height: 48px;
+}
+
+section > header {
+  margin-bottom: 32px;
+}
+
+iframe {
+  margin: 24px 0;
+}
+
+#releases {
+  color: black;
+  background-color: white;
+}
+
+#tv {
+  color: white;
+  background-color: black;
+}
+
+footer {
+  grid-column: 1 / span 2;
+  background-color: aquamarine;
+  color: #555555;
+  font-size: 14px;
+}
